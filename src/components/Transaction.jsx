@@ -52,8 +52,8 @@ const Transaction = () => {
               </tr>
             </thead>
             <tbody>
-              {transactData.reverse().map((item) => (
-                <tr className="border-b" key={item.sn}>
+              {transactData.reverse().map((item, index) => (
+                <tr className="border-b" key={index + 1}>
                   <td className="text-center border text-base border-lightColor">
                     {item.sn}
                   </td>
