@@ -53,9 +53,9 @@ const Transaction = () => {
             </thead>
             <tbody>
               {transactData.reverse().map((item, index) => (
-                <tr className="border-b" key={index + 1}>
+                <tr className="border-b" key={item.sn}>
                   <td className="text-center border text-base border-lightColor">
-                    {item.sn}
+                    {index + 1}
                   </td>
                   <td className="p-4 text-sm md:text-base text-center border border-lightColor ">
                     <a
